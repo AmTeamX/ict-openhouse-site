@@ -1,0 +1,122 @@
+{
+  "EVALUATION_TITLE": "Evaluation Form",
+  "EVALUATION_DESCRIPTION": "This Evaluation Form has 3 sections. Please fill the answer in all sections for the evaluation of this activity.",
+  "START_EVAL_BUTTON": "Start Evaluation",
+  "SECTION_TITLE_TEMPLATE": "Section {}",
+  "RATING_OPTIONS": {
+    "STRONGLY_AGREE": "Strongly Agree",
+    "AGREE": "Agree",
+    "NEUTRAL": "Neutral",
+    "DISAGREE": "Disagree",
+    "STRONGLY_DISAGREE": "Strongly Disagree",
+    "NOT_APPLICABLE": "N/A"
+  },
+  "SECTION_1": {
+    "TITLE": "General Information",
+    "ROLE": {
+      "QUESTION": "Role",
+      "OPTIONS": {
+        "HIGH_SCHOOL_STUDENT": "High School Student",
+        "UNIVERSITY_STUDENT": "University Student",
+        "TEACHER": "Teacher / Instructor",
+        "PARENTS": "Parents",
+        "OTHERS": "Others"
+      }
+    },
+    "CHANNELS": {
+      "QUESTION": "How did you know about this event?",
+      "OPTIONS": {
+        "MUICT_OP_FACEBOOK": "MUICT Open House Facebook Page",
+        "ICT_WEBSITE": "ICT website",
+        "UNIVERSITY_WEBSITE": "University's website",
+        "EDUCATIONAL_WEBSITE": "Educational websites (dek-d.com, camphub.in.th, etc.)",
+        "SOCIAL_MEDIA": "Social Media (Facebook, Twitter, Instagram, etc.)",
+        "ICT_BOOTH_SIRIVIDHAYA": "Faculty of ICT Booth at Sirividhaya Building",
+        "LEAFLET_POSTER": "Leaflet / Poster",
+        "FRIENDS": "Friends",
+        "UNIVERSITY_PR": "PR from the university",
+        "INVITATION_LETTER": "Invitation Letter",
+        "OTHERS": "Others"
+      }
+    }
+  },
+  "SECTION_2": {
+    "TITLE": "Satisfaction",
+    "GROUP_SERVICE_LOCATION_DATE_TIME_TITLE": "Service, Location, Date and Time",
+    "DATE_AND_TIME_RATING": {
+      "QUESTION": "Appropriate choice of activities' date and time."
+    },
+    "LOCATION_RATING": {
+      "QUESTION": "Appropriate choice of location for the activities."
+    },
+    "GROUP_FORMAT_BENEFIT_OVERALL_TITLE": "Format, Benefit, and Overall",
+    "STAGE_RATING": {
+      "QUESTION": "Stage activities."
+    },
+    "BOOTH_RATING": {
+      "QUESTION": "Seniors from students' activity booths."
+    },
+    "PROJECT_EXHIBITION_RATING": {
+      "QUESTION": "The previous work of seniors and alumnni."
+    },
+    "GUIDANCE_RATING": {
+      "QUESTION": "Guidance activities."
+    },
+    "INTL_EXPERIENCE_SHARING_RATING": {
+      "QUESTION": "The internship experience sharing session."
+    },
+    "BENEFIT_RATING": {
+      "QUESTION": "Level of benefit and knowledge you have received from your visiting."
+    },
+    "OVERALL_RATING": {
+      "QUESTION": "Overall satisfaction of the activity."
+    },
+    "INTEREST_RATING": {
+      "QUESTION": "Being encouraged and interested in applying for the Faculty of ICT"
+    }
+  },
+  "SECTION_3": {
+    "TITLE": "Others",
+    "INTERESTED_PROGRAMS": {
+      "QUESTION": "What are the top 3 programs, faculties, and universities you are interested in? (Rank 1 is the most interested one)",
+      "SUB_ANSWERS_TITLE": "Rank {}:"
+    },
+    "FACTORS": {
+      "QUESTION": "What are the top 3 factors that you consider when selecting the program to apply for? (Rank 1 is the most important one)",
+      "OPTIONS": {
+        "UNIVERSITY_REP": "University reputation",
+        "FACULTY_REP": "Faculty reputation",
+        "GUARANTEED": "Program is guaranteed by international standard organization",
+        "TEACHING_PERSONAL": "Teaching personnel",
+        "LOCATION": "Location",
+        "TUITIONFEE": "Tuition fee and studying expenses",
+        "RECOMMENDED": "Recommended by parents or friends",
+        "CAREER": "Career opportunity after graduated",
+        "TRENDS": "Follow the social trend"
+      }
+    },
+    "IMPRESSED": {
+      "QUESTION": "What are things that you liked or impressed from participating in this event?"
+    },
+    "UNIMPRESSED": {
+      "QUESTION": "What are things that you disliked or unimpressed from participating in this event?"
+    },
+    "RECOMMENDED":{
+      "QUESTION": "Would you like ICT Mahidol to organize any additional events or activities?"
+    },
+    "OTHER_SUGGESTIONS": {
+      "QUESTION": "Other suggestions"
+    }
+  },
+  "EVALUATION_SUCCESS": {
+    "TITLE": "-Thank you-",
+    "MESSAGE": "for your visit!"
+  },
+  "BUTTON_LABEL": {
+    "SUBMIT": "Submit",
+    "NEXT": "Next",
+    "BACK": "Back",
+    "CANCEL": "Cancel",
+    "CLOSE": "Close"
+  }
+}

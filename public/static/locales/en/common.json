@@ -1,0 +1,10 @@
+{
+  "LOADING_STATE_TITLE": "Igniting...",
+  "LOADING_STATE_SUBTITLE": "!",
+  "BUTTON_LABEL": {
+    "CLOSE": "Close",
+    "CANCEL": "Cancel",
+    "BACK": "Back",
+    "SUBMIT": "Submit"
+  }
+}
