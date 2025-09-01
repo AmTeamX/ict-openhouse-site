@@ -1,0 +1,122 @@
+{
+  "EVALUATION_TITLE": "แบบประเมินความคิดเห็น",
+  "EVALUATION_DESCRIPTION": "แบบประเมินฉบับนี้มีทั้งหมด 3 ตอน กรุณาตอบแบบประเมินให้ครบทั้ง 3 ตอน เพื่อเป็นประโยชน์ต่อคณะผู้จัดกิจกรรมสำหรับการประมวลผลและสรุปผลของกิจกรรมในครั้งนี้",
+  "START_EVAL_BUTTON": "เริ่มแบบสอบถาม",
+  "SECTION_TITLE_TEMPLATE": "ส่วนที่ {}",
+  "RATING_OPTIONS": {
+    "STRONGLY_AGREE": "มากที่สุด",
+    "AGREE": "มาก",
+    "NEUTRAL": "ปานกลาง",
+    "DISAGREE": "น้อย",
+    "STRONGLY_DISAGREE": "น้อยที่สุด",
+    "NOT_APPLICABLE": "ไม่ได้เข้าร่วมกิจกรรม"
+  },
+  "SECTION_1": {
+    "TITLE": "ข้อมูลทั่วไป",
+    "ROLE": {
+      "QUESTION": "สถานะผู้ให้ข้อมูล",
+      "OPTIONS": {
+        "HIGH_SCHOOL_STUDENT": "นักเรียน",
+        "UNIVERSITY_STUDENT": "นักศึกษา",
+        "TEACHER": "ครู / อาจารย์",
+        "PARENTS": "ผู้ปกครอง",
+        "OTHERS": "อื่น ๆ"
+      }
+    },
+    "CHANNELS": {
+      "QUESTION": "ทราบข้อมูลจากแหล่งใด",
+      "OPTIONS": {
+        "MUICT_OP_FACEBOOK": "เพจ MUICT Open House",
+        "ICT_WEBSITE": "เว็บไซต์คณะ ICT",
+        "UNIVERSITY_WEBSITE": "เว็บไซต์มหาวิทยาลัย",
+        "EDUCATIONAL_WEBSITE": "เว็บไซต์การศึกษา (dek-d.com, camphub.in.th, admissionpremium.com, etc.)",
+        "SOCIAL_MEDIA": "Social Media (Facebook, Twitter, Instagram, etc.)",
+        "ICT_BOOTH_SIRIVIDHAYA": "บูธแนะนำคณะ ICT ที่ อาคารสิริวิทยา",
+        "LEAFLET_POSTER": "ใบปลิว / แผ่นพับ / โปสเตอร์",
+        "FRIENDS": "เพื่อน",
+        "UNIVERSITY_PR": "การประชาสัมพันธ์จากสถานศึกษา",
+        "INVITATION_LETTER": "จดหมายเชิญ",
+        "OTHERS": "อื่น ๆ"
+      }
+    }
+  },
+  "SECTION_2": {
+    "TITLE": "ระดับความพึงพอใจ",
+    "GROUP_SERVICE_LOCATION_DATE_TIME_TITLE": "ด้านการบริการ สถานที่ วันและเวลา",
+    "DATE_AND_TIME_RATING": {
+      "QUESTION": "ความเหมาะสมของวัน / เวลา ในการจัดกิจกรรม"
+    },
+    "LOCATION_RATING": {
+      "QUESTION": "ความเหมาะสมของสถานที่ที่ใช้ในการจัดกิจกรรม"
+    },
+    "GROUP_FORMAT_BENEFIT_OVERALL_TITLE": "การบริการ / การอำนวยความสะดวกในกิจกรรมต่าง ๆ",
+    "STAGE_RATING": {
+      "QUESTION": "เวทีการแสดง"
+    },
+    "BOOTH_RATING": {
+      "QUESTION": "ชมรมนักศึกษา"
+    },
+    "PROJECT_EXHIBITION_RATING": {
+      "QUESTION": "นิทรรศการแสดงผลงานนักศึกษา"
+    },
+    "GUIDANCE_RATING": {
+      "QUESTION": "กิจกรรมแนะแนวการศึกษา"
+    },
+    "INTL_EXPERIENCE_SHARING_RATING": {
+      "QUESTION": "กิจกรรมประสบการณ์ฝึกงานไทยและต่างประเทศ"
+    },
+    "BENEFIT_RATING": {
+      "QUESTION": "ประโยชน์และความรู้ที่ได้รับจากการเข้าร่วมกิจกรรมทั้งหมด"
+    },
+    "OVERALL_RATING": {
+      "QUESTION": "ความพึงพอใจต่อภาพรวมของกิจกรรม"
+    },
+    "INTEREST_RATING": {
+      "QUESTION": "มีความสนใจสมัครศึกษาต่อที่คณะ ICT"
+    }
+  },
+  "SECTION_3": {
+    "TITLE": "อื่น ๆ",
+    "INTERESTED_PROGRAMS": {
+      "QUESTION": "ท่านสนใจศึกษาต่อในหลักสูตร คณะ และมหาวิทยาลัยใดบ้าง 3 อันดับแรก (ตามลำดับที่สนใจ)",
+      "SUB_ANSWERS_TITLE": "อันดับ {}:"
+    },
+    "FACTORS": {
+      "QUESTION": "ปัจจัยสำคัญที่ท่านใช้ในการพิจารณาเลือกหลักสูตรในการศึกษาต่อ 3 อันดับแรก (ตามลำดับความสำคัญ)",
+      "OPTIONS": {
+        "UNIVERSITY_REP": "ชื่อเสียงมหาวิทยาลัย",
+        "FACULTY_REP": "ชื่อเสียงคณะ",
+        "GUARANTEED": "การได้รับการรับรองมาตรฐานของหลักสูตรในระดับสากล",
+        "TEACHING_PERSONAL": "บุคลากรผู้สอน",
+        "LOCATION": "สถานที่ตั้ง",
+        "TUITIONFEE": "ค่าเทอม และค่าใช้จ่ายในการเรียน",
+        "RECOMMENDED": "ผู้ปกครองหรือคนรู้จักแนะนำ",
+        "CAREER": "โอกาสทางอาชีพหลังจบการศึกษา",
+        "TRENDS": "ตามเทรนด์ของสังคม"
+      }
+    },
+    "IMPRESSED": {
+      "QUESTION": "สิ่งที่ท่านชอบหรือประทับใจจากการเข้าร่วมงานนี้"
+    },
+    "UNIMPRESSED": {
+      "QUESTION": "สิ่งที่ท่านไม่ชอบหรือไม่ประทับใจจากการเข้าร่วมงานนี้"
+    },
+    "RECOMMENDED":{
+      "QUESTION": "ท่านอยากให้คณะจัดงานหรือกิจกรรมอื่นใดเพิ่มเติม"
+    },
+    "OTHER_SUGGESTIONS": {
+      "QUESTION": "ข้อคิดเห็น / ข้อเสนอแนะ อื่น ๆ"
+    }
+  },
+  "EVALUATION_SUCCESS": {
+    "TITLE": "- ขอบคุณ -",
+    "MESSAGE": "ที่มาเยือน"
+  },
+  "BUTTON_LABEL": {
+    "SUBMIT": "ส่งข้อมูล",
+    "NEXT": "ต่อไป",
+    "BACK": "ก่อนหน้า",
+    "CANCEL": "ยกเลิก",
+    "CLOSE": "ปิด"
+  }
+}

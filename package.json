@@ -1,24 +1,52 @@
 {
-  "name": "ict-openhouse-site",
-  "version": "0.1.0",
+  "name": "web",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:install": "cypress install",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "@headlessui/react": "^1.7.17",
+    "@hookform/resolvers": "^3.3.1",
+    "@iconify/react": "^4.1.1",
+    "@line/liff": "^2.22.3",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@t3-oss/env-nextjs": "^0.6.1",
+    "axios": "^1.5.0",
+    "clsx": "^2.0.0",
+    "dayjs": "^1.11.9",
+    "i18next": "^23.4.6",
+    "joi": "^17.10.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "next": "13.4.19",
+    "next-i18next": "^14.0.0",
+    "next-seo": "^6.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-gtm-module": "^2.0.11",
+    "react-hook-form": "^7.45.4",
+    "react-i18next": "^13.2.1",
+    "storeon": "^3.1.5",
+    "swr": "^2.2.2",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "@babel/core": "^7.22.11",
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-gtm-module": "^2.0.1",
+    "autoprefixer": "^10.4.15",
+    "cypress": "^13.1.0",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
   }
 }
