@@ -23,7 +23,7 @@ const RegistrantTypeButton: FC<RegistrantTypeButtonProps> = ({
   return (
     <div
       className={clsx(
-        'relative flex h-48 flex-col items-center overflow-hidden rounded-xl bg-dst-prussian-blue font-heading shadow-md',
+        'relative flex h-fit flex-col items-center overflow-hidden rounded-xl bg-white font-heading shadow-md',
         className,
       )}
       {...props}
@@ -32,13 +32,13 @@ const RegistrantTypeButton: FC<RegistrantTypeButtonProps> = ({
         <div
           className={clsx(
             variantClass,
-            'flex h-36 w-full flex-grow items-center justify-center bg-dst-prussian-blue bg-size-double bg-center bg-no-repeat p-4 bg-blend-screen',
+            'flex h-fit w-full flex-grow items-center justify-center bg-white bg-size-double bg-center bg-no-repeat p-4 bg-blend-screen',
           )}
         >
-          <img src={icon} alt={label} className="max-h-32 w-full" />
+          <img src={icon} alt={label} className="max-w-32 w-full" />
         </div>
       )}
-      <div className="z-10 flex h-14 w-full flex-grow-0 items-center justify-center break-words bg-ict-turquoise py-1 px-3 text-center font-bold leading-5 text-white">
+      <div className="z-10 flex h-14 w-full flex-grow-0 items-center justify-center break-words bg-[#577D57] py-1 px-3 text-center font-bold leading-5 text-white">
         {label}
       </div>
     </div>

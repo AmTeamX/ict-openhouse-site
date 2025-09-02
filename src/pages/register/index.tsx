@@ -25,10 +25,10 @@ const Page = () => {
   const { data, error } = useSWR<ApiResponseSuccess<{ isRegistered: boolean }>>(
     [LIFF_STATE.READY, LIFF_STATE.READY_UNAUTHENTICATED].includes(state)
       ? {
-          url: '/users/isRegistered',
-          method: 'GET',
-          token: liff.getIDToken() ? liff.getIDToken() : undefined,
-        }
+        url: '/users/isRegistered',
+        method: 'GET',
+        token: liff.getIDToken() ? liff.getIDToken() : undefined,
+      }
       : null,
     fetcher,
   )
@@ -47,7 +47,7 @@ const Page = () => {
       <div className="mx-auto flex min-h-screen max-w-screen-sm flex-col items-center justify-center px-8">
         <IctMahidolOpenHouseWordmark className="mb-10 w-full" />
 
-        <div className="mb-6 space-y-2 text-center font-heading text-2xl text-slate-800 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+        <div className="mb-6 space-y-2 text-center font-heading text-2xl text-black">
           <div>Select Your Nationality</div>
           <div>เลือกสัญชาติสำหรับลงทะเบียน</div>
         </div>
@@ -57,7 +57,7 @@ const Page = () => {
             icon="op2022:flag-thailand"
             iconPosition="left"
             label="สัญชาติไทย"
-            className="w-full sm:w-1/2 border-2 border-slate-800"
+            className="w-full sm:w-1/2 border-2 border-slate-500"
             data-test="nationality-th"
             onClick={() => {
               dispatch('form/register/setFields', { language: 'th' })
@@ -69,7 +69,7 @@ const Page = () => {
             icon="op2022:globe"
             iconPosition="left"
             label="International"
-            className="w-full sm:w-1/2 border-2 border-slate-800"
+            className="w-full sm:w-1/2 border-2 border-slate-500"
             data-test="nationality-en"
             onClick={() => {
               dispatch('form/register/setFields', { language: 'en' })
@@ -77,6 +77,9 @@ const Page = () => {
               push('/register/type', undefined, { locale: 'en' })
             }}
           />
+        </div>
+        <div className='absolute w-1/4 bottom-0 left-40 hidden lg:block'>
+          <img src="/static/images/memo_duck.png" alt="Memo Duck" />
         </div>
       </div>
     </Wrapper>

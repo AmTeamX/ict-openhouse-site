@@ -8,7 +8,7 @@ import { useForm } from 'react-hook-form'
 import Button from '~/components/Button'
 import TextInput from '~/components/Input/TextInput'
 import { useStoreon } from '~/context/storeon'
-import Wrapper from '~/layouts/Wrapper'
+import Wrapper, { BG_VARIANT_TYPES } from '~/layouts/Wrapper'
 import FormHeader from '~/routes/Register/components/FormHeader'
 import { strSubstitute } from '~/utils/string'
 
@@ -49,7 +49,10 @@ const Page: NextPage = () => {
   })
 
   return (
-    <Wrapper>
+    <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
+      <div className='fixed x-4 w-56 top-16 left-16 hidden lg:block'>
+        <img src='/static/images/Logo.png' alt='Logo Image' />
+      </div>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col px-8 py-10 sm:justify-center">
         <form
           data-test="basic-info-form"
@@ -144,7 +147,7 @@ const Page: NextPage = () => {
             <Button
               type="submit"
               label={t('REG_FORM.REG_BUTTON_NEXT')}
-              variant="ictTurquoise"
+              variant="confirm"
               className="w-full sm:w-32"
             />
           </div>

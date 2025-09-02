@@ -1,15 +1,15 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
-import '~/utils/iconify'
 import { DefaultSeo } from 'next-seo'
+import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import TagManager from 'react-gtm-module'
-import nextI18nConfig from '../../next-i18next.config'
-import LIFFWrapper from '~/layouts/LiffWrapper'
 import { Context } from '~/context/storeon'
+import LIFFWrapper from '~/layouts/LiffWrapper'
 import LocaleWrapper from '~/layouts/LocaleWrapper'
+import '~/utils/iconify'
+import nextI18nConfig from '../../next-i18next.config'
+import '../styles/globals.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { pathname, replace } = useRouter()
@@ -17,13 +17,13 @@ const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-MDH3CML' })
 
-    console.log('pathname', pathname);
-    
+    // console.log('pathname', pathname);
 
-    if(true) {
-      const searchParams = new URL(window.location.href)
-      replace(`/`)
-    }
+
+    // if(true) {
+    //   const searchParams = new URL(window.location.href)
+    //   replace(`/`)
+    // }
 
   }, [])
 
@@ -46,13 +46,13 @@ const App = ({ Component, pageProps }: AppProps) => {
         <LIFFWrapper>
           {['/quest', '/quest/[id]', '/evaluation', '/agenda'].includes(pathname)
             ? (
-            <LocaleWrapper>
-              <Component {...pageProps} />
-            </LocaleWrapper>
-              )
+              <LocaleWrapper>
+                <Component {...pageProps} />
+              </LocaleWrapper>
+            )
             : (
-            <Component {...pageProps} />
-              )}
+              <Component {...pageProps} />
+            )}
         </LIFFWrapper>
       </Context>
     </>

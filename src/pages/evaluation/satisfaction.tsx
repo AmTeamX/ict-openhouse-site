@@ -4,14 +4,16 @@ import type { GetStaticProps, NextPage } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { generalSchema } from './general'
 import Button from '~/components/Button'
+import CustomPopup from '~/components/CustomPopup'
 import { EvaluationHeaderWordmark } from '~/components/Icons'
 import { Evaluation_EN } from '~/const/evaluation/evaluationForm'
 import { useStoreon } from '~/context/storeon'
-import Wrapper from '~/layouts/Wrapper'
+import Wrapper, { BG_VARIANT_TYPES } from '~/layouts/Wrapper'
 import { FormBuilder } from '~/modules/form/formBuilder'
+import { generalSchema } from './general'
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'th' }) => ({
   props: {
@@ -45,9 +47,10 @@ const Page: NextPage = () => {
     resolver: joiResolver(satisfactionSchema),
     defaultValues: form.evaluation,
   })
+  const [popupOpen, setPopupOpen] = useState(false)
 
   return (
-    <Wrapper>
+    <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col px-8 py-10 sm:justify-center">
         <form
           onSubmit={handleSubmit(
@@ -56,7 +59,9 @@ const Page: NextPage = () => {
               push('/evaluation/others')
             },
             (error) => {
-              console.log(error)
+              if (Object.keys(error).length > 0) {
+                setPopupOpen(true)
+              }
             },
           )}
         >
@@ -82,6 +87,11 @@ const Page: NextPage = () => {
             />
           </div>
         </form>
+        <CustomPopup
+          open={popupOpen}
+          message="Please complete all required fields before confirming."
+          onClose={() => setPopupOpen(false)}
+        />
       </div>
     </Wrapper>
   )

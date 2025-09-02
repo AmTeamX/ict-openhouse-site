@@ -35,7 +35,7 @@ const Page: NextPage = () => {
   }, [liff])
 
   return (
-    <Wrapper>
+    <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col items-center px-8 sm:justify-center">
         <IctMahidolOpenHouseWordmark className="mb-10 w-full" />
 
@@ -47,13 +47,13 @@ const Page: NextPage = () => {
             {t('EVALUATION_SUCCESS.MESSAGE')}
           </h2>
         </div>
-    <div className='flex flex-col items-center justify-center'>
-      <img src="/static/images/nstar/nstar_atomic_done.svg"
-          className="h-48 w-full pl-10 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-          alt="Success"
-        />
-    </div>
-        
+        <div className='flex flex-col items-center justify-center'>
+          <img src="/static/images/nstar/nstar_atomic_done.svg"
+            className="h-48 w-full pl-10 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+            alt="Success"
+          />
+        </div>
+
 
         {liff.isInClient?.() && (
           <div className="mt-10 w-full text-center">

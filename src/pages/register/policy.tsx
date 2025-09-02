@@ -9,7 +9,7 @@ import type { UseFormRegister } from 'react-hook-form'
 import { useForm } from 'react-hook-form'
 import Button from '~/components/Button'
 import { useStoreon } from '~/context/storeon'
-import Wrapper from '~/layouts/Wrapper'
+import Wrapper, { BG_VARIANT_TYPES } from '~/layouts/Wrapper'
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'th' }) => ({
   props: {
@@ -29,7 +29,7 @@ interface PolicyProps {
 
 const THPolicy: FC<PolicyProps> = ({ register }) => {
   return (
-    <div className="rounded-xl sm:bg-white sm:p-16 sm:text-black">
+    <div className="rounded-xl sm:bg-white sm:p-16 text-black">
       <h1 className="mb-4 text-center font-heading text-3xl font-bold">การให้สิทธิ์กับเจ้าของข้อมูลส่วนบุคคล</h1>
       <div className="min-h-[24rem] space-y-5 overflow-hidden rounded-xl bg-white p-10 text-black shadow-lg sm:p-5 sm:shadow-none">
         <div>
@@ -101,7 +101,7 @@ const THPolicy: FC<PolicyProps> = ({ register }) => {
           >
             &quot;นโยบายการคุ้มครองข้อมูลส่วนบุคคล พ.ศ.๒๕๖๓&quot;
           </a>
-          
+
         </div>
       </div>
     </div>
@@ -204,7 +204,10 @@ const Page: NextPage = () => {
   })
 
   return (
-    <Wrapper>
+    <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
+      <div className='fixed x-4 w-56 top-16 left-16 hidden lg:block'>
+        <img src='/static/images/Logo.png' alt='Logo Image' />
+      </div>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col px-8 py-10 sm:justify-center">
         <form
           data-test="policy-form"
@@ -228,8 +231,8 @@ const Page: NextPage = () => {
             <Button
               type="submit"
               label={t('REG_FORM.REG_BUTTON_NEXT')}
-              variant="ictTurquoise"
-              className="w-full sm:w-32"
+              variant="confirm"
+              className="w-full sm:w-32 "
               disabled={watch('policyAgreement') === false}
             />
           </div>

@@ -9,7 +9,7 @@ import { EvaluationHeaderWordmark } from '~/components/Icons'
 import { Evaluation_EN } from '~/const/evaluation/evaluationForm'
 import { useLiff } from '~/context/liff/LIFFProvider'
 import { useStoreon } from '~/context/storeon'
-import Wrapper from '~/layouts/Wrapper'
+import Wrapper, { BG_VARIANT_TYPES } from '~/layouts/Wrapper'
 import { FormBuilder } from '~/modules/form/formBuilder'
 import { APIInstance } from '~/utils'
 
@@ -44,7 +44,7 @@ const Page: NextPage = () => {
   })
 
   return (
-    <Wrapper>
+    <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col px-8 py-10 sm:justify-center">
         <form
           onSubmit={handleSubmit(

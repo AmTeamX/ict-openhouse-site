@@ -1,3 +1,4 @@
+import { joiResolver } from '@hookform/resolvers/joi'
 import Joi from 'joi'
 import type { GetStaticProps, NextPage } from 'next'
 import { useTranslation } from 'next-i18next'
@@ -5,20 +6,18 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
 import { useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { joiResolver } from '@hookform/resolvers/joi'
 import Button from '~/components/Button'
-import SelectInput from '~/components/Input/SelectInput'
-import TextInput from '~/components/Input/TextInput'
 import AutoComplete from '~/components/Input/AutoComplete'
+import SelectInput from '~/components/Input/SelectInput'
 import EduLevels from '~/const/register/eduLevel'
 import Provinces from '~/const/register/province'
 import Schools from '~/const/register/school'
 import { useLiff } from '~/context/liff/LIFFProvider'
 import { useStoreon } from '~/context/storeon'
-import Wrapper from '~/layouts/Wrapper'
+import Wrapper, { BG_VARIANT_TYPES } from '~/layouts/Wrapper'
 import FormHeader from '~/routes/Register/components/FormHeader'
-import { strSubstitute } from '~/utils/string'
 import { APIInstance } from '~/utils'
+import { strSubstitute } from '~/utils/string'
 
 const schema = Joi.object({
   regType: Joi.string().required(),
@@ -73,7 +72,7 @@ const Page: NextPage = () => {
   }, [form.register.fields?.regType])
 
   const isSchoolRequired = useMemo(() => {
-    return ['teacher','student', 'uni_student'].includes(form.register.fields?.regType || '')
+    return ['teacher', 'student', 'uni_student'].includes(form.register.fields?.regType || '')
   }, [form.register.fields?.regType])
 
   const {
@@ -132,7 +131,10 @@ const Page: NextPage = () => {
   }, [])
 
   return (
-    <Wrapper>
+    <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
+      <div className='fixed x-4 w-56 top-16 left-16 hidden lg:block'>
+        <img src='/static/images/Logo.png' alt='Logo Image' />
+      </div>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col px-8 py-10 sm:justify-center">
         <form
           data-test="additional-info-form"
@@ -199,7 +201,7 @@ const Page: NextPage = () => {
                   {...register('school', { required: true })}
                 />
               )}
-              {isEduRequired &&(
+              {isEduRequired && (
                 <SelectInput
                   id="level"
                   data-test="level-select"
