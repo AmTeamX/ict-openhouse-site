@@ -56,7 +56,7 @@ const Page: NextPage = () => {
             }
           )}
         >
-          <div className="rounded-xl sm:p-16 sm:text-white bg-[#000000]/40 backdrop-blur-lg p-10">
+          <div className="rounded-xl sm:p-16 sm:text-white bg-[#000000]/50 backdrop-blur-lg p-10">
             <div className="flex flex-col items-center justify-center">
               <EvaluationHeaderWordmark className="mb-6 text-white sm:text-white" />
             </div>
@@ -73,7 +73,7 @@ const Page: NextPage = () => {
               type="submit"
               data-test="next-button"
               label={t('BUTTON_LABEL.NEXT')}
-              variant="ictTurquoise"
+              variant="confirm"
               className="w-32"
             />
           </div>

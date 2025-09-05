@@ -13,10 +13,11 @@ const CustomPopup: React.FC<CustomPopupProps> = ({ open, message, onClose }) => 
             <div className="bg-white rounded-lg p-6 shadow-lg min-w-[300px] text-center">
                 {/* Show message text */}
                 <div className="mb-4 text-black text-base font-medium">
-                    {message}
+                    Please complete all required fields
+                    before confirm.
                 </div>
                 <button
-                    className="px-4 py-2 bg-ictTurquoise text-black rounded"
+                    className="px-8 py-2 bg-ictTurquoise text-white bg-[#426442] rounded-xl "
                     onClick={onClose}
                 >
                     OK

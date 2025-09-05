@@ -23,7 +23,7 @@ const RegistrantTypeButton: FC<RegistrantTypeButtonProps> = ({
   return (
     <div
       className={clsx(
-        'relative flex h-fit flex-col items-center overflow-hidden rounded-xl bg-white font-heading shadow-md',
+        'relative flex h-fit flex-col items-center overflow-hidden rounded-xl bg-white shadow-md',
         className,
       )}
       {...props}

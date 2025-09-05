@@ -21,7 +21,7 @@ const Page = () => {
   return (
     <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col items-center justify-center px-8 py-10">
-        <div className="mb-10 text-center font-heading text-6xl font-bold text-black">
+        <div className="mb-10 text-center  text-6xl font-bold text-black">
           <div>{t('TYPE_SELECTION.REG_TYPE_SELECTION_TITLE')}?</div>
         </div>
 

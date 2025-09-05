@@ -41,34 +41,32 @@ const Page: NextPage = () => {
         <img src='/static/images/Logo.png' alt='Logo Image' />
       </div>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col items-center px-8 sm:justify-center">
-
-        <div className="mb-12 text-center">
-          <h1 className="mb-5 font-heading text-[56px] font-bold text-[#80C53C]">
-            {t('REG_FORM.REG_SUCCESS_TITLE')}
-          </h1>
-          <h2 className="font-heading text-[24px] text-black font-bold">
-            {t('REG_FORM.REG_SUCCESS_SUBTITLE')}!
-          </h2>
-        </div>
-
-        <div className="h-fit w-fit justify-center hidden lg:flex">
-          <img src='/static/images/detective_duck.png' alt='Detective Duck' className='w-2/4 ' />
-        </div>
-
-
-        {liff.isInClient?.() && (
-          <div className="mt-10 w-full text-center">
-            <Button
-              type="button"
-              label={tCommon('BUTTON_LABEL.CLOSE')}
-              variant="ictTurquoise"
-              className="w-full sm:w-32"
-              onClick={() => {
-                liff.closeWindow()
-              }}
-            />
+        <div className='bg-white w-full max-w-xl p-8 sm:p-16 rounded-2xl border border-black'>
+          <div className="text-center my-12 font-heading">
+            <h1 className="mb-5 text-[2.5rem] sm:text-[56px] font-bold text-[#173C0A]">
+              {t('REG_FORM.REG_SUCCESS_TITLE')}
+            </h1>
+            <h2 className="text-xl sm:text-[24px] text-black font-bold">
+              {t('REG_FORM.REG_SUCCESS_SUBTITLE')}!
+            </h2>
           </div>
-        )}
+          <div className="h-fit w-full justify-center lg:flex">
+            <img src='/static/images/detective_duck.png' alt='Detective Duck' className='w-full max-w-xs h-auto' />
+          </div>
+          {liff.isInClient?.() && (
+            <div className="mt-10 w-full text-center">
+              <Button
+                type="button"
+                label={tCommon('BUTTON_LABEL.CLOSE')}
+                variant="ictTurquoise"
+                className="w-full sm:w-32"
+                onClick={() => {
+                  liff.closeWindow()
+                }}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </Wrapper>
   )

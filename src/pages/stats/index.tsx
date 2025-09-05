@@ -1,13 +1,13 @@
-import useSWR from 'swr'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import type { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
-import dayjs from '~/utils/dayjs'
+import useSWR from 'swr'
 import { IctMahidolOpenHouseWordmark } from '~/components/Icons'
 import LoadingWrapper from '~/layouts/LoadingWrapper'
 import Wrapper, { BG_VARIANT_TYPES } from '~/layouts/Wrapper'
 import type { ApiResponseSuccess } from '~/types/api'
 import { fetcher } from '~/utils'
+import dayjs from '~/utils/dayjs'
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'th' }) => ({
   props: {
@@ -26,9 +26,9 @@ const Page = () => {
   >(
     isReady
       ? {
-          url: 'stats/total',
-          method: 'GET',
-        }
+        url: 'stats/total',
+        method: 'GET',
+      }
       : null,
     fetcher,
     {
@@ -44,16 +44,16 @@ const Page = () => {
       <IctMahidolOpenHouseWordmark className="mx-auto h-36" />
 
       <div>
-        <div className='text-center text-3xl text-white font-heading drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Total Participants</div>
+        <div className='text-center text-3xl text-white  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Total Participants</div>
         <div className="mt-10 flex justify-center gap-8">
-        
+
           {data?.payload.total
             .toString()
             .split('')
             .map((number, index) => (
               <div
                 key={index}
-                className="inline-block w-44 rounded-xl bg-white px-5 text-center font-heading font-bold text-ict-magenta-process"
+                className="inline-block w-44 rounded-xl bg-white px-5 text-center  font-bold text-ict-magenta-process"
               >
                 <div className="text-center text-[200px] font-bold leading-tight">{number}</div>
               </div>
@@ -62,7 +62,7 @@ const Page = () => {
 
         <div className="mt-5 flex gap-2">
           {Object.entries(data?.payload.dates).map(([date, count]) => (
-            <div key={date} className="w-full rounded-xl bg-white px-5 py-3 text-center font-heading text-black">
+            <div key={date} className="w-full rounded-xl bg-white px-5 py-3 text-center  text-black">
               <div>{dayjs(date).format('DD MMMM YYYY')}</div>
               <div className="text-center text-4xl font-bold text-ict-magenta-process">{count}</div>
             </div>
@@ -71,7 +71,7 @@ const Page = () => {
       </div>
 
       <div>
-        <div className="mt-10 text-center font-heading text-2xl font-bold">
+        <div className="mt-10 text-center  text-2xl font-bold">
           Last Updated {dayjs(data?.payload.timestamp).format('DD MMMM YYYY HH:mm:ss')}
         </div>
       </div>

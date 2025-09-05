@@ -36,23 +36,25 @@ const Page: NextPage = () => {
 
   return (
     <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
-      <div className="mx-auto flex min-h-screen max-w-screen-md flex-col items-center px-8 sm:justify-center">
+      <div className="mx-auto flex min-h-screen max-w-screen-md flex-col justify-center items-center px-8">
         <IctMahidolOpenHouseWordmark className="mb-10 w-full" />
 
         <div className="mb-4 text-center">
-          <h1 className="mb-5 font-heading text-5xl font-bold text-ict-turquoise drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h1
+            className="mb-5 text-5xl font-bold text-[#173C0A]"
+          >
             {t('EVALUATION_SUCCESS.TITLE')}
           </h1>
-          <h2 className="font-heading text-3xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h2 className=" text-3xl font-bold text-[#173C0A]">
             {t('EVALUATION_SUCCESS.MESSAGE')}
           </h2>
         </div>
-        <div className='flex flex-col items-center justify-center'>
+        {/* <div className='flex flex-col items-center justify-center'>
           <img src="/static/images/nstar/nstar_atomic_done.svg"
             className="h-48 w-full pl-10 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
             alt="Success"
           />
-        </div>
+        </div> */}
 
 
         {liff.isInClient?.() && (

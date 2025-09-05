@@ -8,10 +8,10 @@ interface FormHeaderProps {
 const FormHeader: FC<FormHeaderProps> = ({ title, section }) => {
   return (
     <>
-      <div className="mb-5 font-heading text-4xl font-bold sm:text-5xl">
+      <div className="mb-5  text-4xl font-bold sm:text-5xl">
         {title}
       </div>
-      <div className="font-heading text-xl font-bold sm:text-2xl">
+      <div className=" text-xl font-bold sm:text-2xl">
         {section}
       </div>
     </>

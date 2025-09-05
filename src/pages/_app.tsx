@@ -30,8 +30,8 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <DefaultSeo
-        defaultTitle={'ICT Mahidol Open House 2023'}
-        titleTemplate={'%s | ICT Mahidol Open House 2023'}
+        defaultTitle={'ICT Mahidol Open House 2025'}
+        titleTemplate={'%s | ICT Mahidol Open House 2025'}
         additionalLinkTags={[
           {
             rel: 'icon',

@@ -47,7 +47,7 @@ const Page = () => {
       <div className="mx-auto flex min-h-screen max-w-screen-sm flex-col items-center justify-center px-8">
         <IctMahidolOpenHouseWordmark className="mb-10 w-full" />
 
-        <div className="mb-6 space-y-2 text-center font-heading text-2xl text-black">
+        <div className="mb-6 space-y-2 text-center  text-2xl text-black">
           <div>Select Your Nationality</div>
           <div>เลือกสัญชาติสำหรับลงทะเบียน</div>
         </div>
@@ -78,9 +78,9 @@ const Page = () => {
             }}
           />
         </div>
-        <div className='absolute w-1/4 bottom-0 left-40 hidden lg:block'>
+        {/* <div className='absolute w-1/4 bottom-0 left-40 hidden lg:block'>
           <img src="/static/images/memo_duck.png" alt="Memo Duck" />
-        </div>
+        </div> */}
       </div>
     </Wrapper>
   )

@@ -92,7 +92,7 @@ const Page: NextPage = () => {
               type="submit"
               data-test="next-button"
               label={t('BUTTON_LABEL.SUBMIT')}
-              variant="ictTurquoise"
+              variant="confirm"
               disabled={isSubmitting}
               className="w-32"
             />

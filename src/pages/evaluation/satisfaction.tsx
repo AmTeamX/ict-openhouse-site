@@ -82,7 +82,7 @@ const Page: NextPage = () => {
               type="submit"
               data-test="next-button"
               label={t('BUTTON_LABEL.NEXT')}
-              variant="ictTurquoise"
+              variant="confirm"
               className="w-32"
             />
           </div>

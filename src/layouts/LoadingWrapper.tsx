@@ -20,9 +20,9 @@ const LoadingWrapper: FC<ComponentProps<typeof Wrapper>> = ({
         src="/static/animations/nstar_loading.json"
         style={{ height: '300px', width: '300px' }}
       /> */}
-      <div className="space-y-2 text-center font-heading">
-        <div className="text-2xl font-bold">{t("LOADING_STATE_TITLE")}</div>
-        <div className="text-lg">{t('LOADING_STATE_SUBTITLE')}</div>
+      <div className="space-y-2 text-center ">
+        <div className="text-2xl font-bold text-black">{t("LOADING_STATE_TITLE")}</div>
+        <div className="text-lg text-black">{t('LOADING_STATE_SUBTITLE')}</div>
       </div>
     </Wrapper>
   )

@@ -13,7 +13,7 @@ const InputLabel: FC<InputLabelProps> = ({
   ...props
 }) => {
   return (
-    <label className={clsx('font-heading font-bold', className)} {...props}>
+    <label className={clsx(' font-bold', className)} {...props}>
       {label}
       {required && <span className="text-red-500">*</span>}
     </label>

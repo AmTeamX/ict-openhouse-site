@@ -30,7 +30,7 @@ const ActivityCard: FC<ActivityCardProps> = ({
           success && 'text-[rgb(1,50,32)]', /*#4a521e*/
         )}
       />
-      <div className="flex h-12 items-center break-words font-heading font-bold">
+      <div className="flex h-12 items-center break-words  font-bold">
         {title}
       </div>
     </div>
