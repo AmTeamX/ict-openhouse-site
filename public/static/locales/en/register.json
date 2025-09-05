@@ -1,6 +1,6 @@
 {
   "TYPE_SELECTION": {
-    "REG_TYPE_SELECTION_TITLE": "Who are you?",
+    "REG_TYPE_SELECTION_TITLE": "Who are you",
     "REG_TYPE_STUDENT": "Student",
     "REG_TYPE_UNI_STUDENT": "University Student",
     "REG_TYPE_TEACHER": "Teacher",
@@ -22,16 +22,16 @@
     "REG_FIELD_EMAIL": "Email",
     "REG_FIELD_PHONE": "Phone Number",
 
-    "REG_FIELD_FIRSTNAME_PLACEHOLDER": "Steve",
-    "REG_FIELD_LASTNAME_PLACEHOLDER": "Enderdragon",
-    "REG_FIELD_EMAIL_PLACEHOLDER": "steve@minecraft.com",
+    "REG_FIELD_FIRSTNAME_PLACEHOLDER": "Duckey",
+    "REG_FIELD_LASTNAME_PLACEHOLDER": "WaitForLove",
+    "REG_FIELD_EMAIL_PLACEHOLDER": "Duckey@ictmahidol.com",
     "REG_FIELD_PHONE_PLACEHOLDER": "0891236321",
 
     "REG_FIELD_PROVINCE": "Current Resident Province",
     "REG_FIELD_SCHOOL": "School / Institute / University",
     "REG_FIELD_SCHOOL_LEVEL": "Current / Highest Level of Education",
 
-    "REG_FIELD_SCHOOL_PLACEHOLDER": "Star Technology School",
+    "REG_FIELD_SCHOOL_PLACEHOLDER": "Duck Duck School",
 
     "REG_BUTTON_SUBMIT": "Register",
     "REG_BUTTON_NEXT": "Next",
@@ -39,7 +39,7 @@
     "REG_BUTTON_ACCEPT": "Agree",
 
     "REG_SUCCESS_TITLE": "Registered",
-    "REG_SUCCESS_SUBTITLE": "Let's Ignite the Future!!",
+    "REG_SUCCESS_SUBTITLE": "Welcome To ICT MAHIDOL",
 
     "POLICY": {
       "TITLE": "Privacy Policy",
@@ -48,6 +48,6 @@
   },
   "REGISTERED": {
     "REG_EXISTED_TITLE": "Registered",
-    "REG_EXISTED_SUBTITLE": "Let's Ignite the Future!!"
+    "REG_EXISTED_SUBTITLE": "Let's Go!"
   }
 }

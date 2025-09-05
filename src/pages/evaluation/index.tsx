@@ -24,10 +24,10 @@ const Page = () => {
   const { data, error } = useSWR<ApiResponseSuccess<{ isEvaluataed: boolean }>>(
     isReady
       ? {
-          url: '/evaluations/isEvaluated',
-          method: 'GET',
-          token: liff.getIDToken() ? liff.getIDToken() : undefined,
-        }
+        url: '/evaluations/isEvaluated',
+        method: 'GET',
+        token: liff.getIDToken() ? liff.getIDToken() : undefined,
+      }
       : null,
     fetcher,
   )
@@ -44,25 +44,32 @@ const Page = () => {
         <IctMahidolOpenHouseWordmark className="mb-10 w-full" />
 
         <div className="mb-5 rounded-xl bg-[#000000]/40 backdrop-blur-lg p-10">
-          <div className="mb-6 space-y-5 text-center font-heading">
-          <div className="text-3xl font-bold">{t('EVALUATION_TITLE', { ns: 'evaluation' })}</div>
-          <div>{t('EVALUATION_DESCRIPTION', { ns: 'evaluation' })}</div>
+          <div className="mb-6 space-y-5 text-center ">
+            <div className="text-3xl font-bold">Evaluation</div>
+            <div>Please select a language.</div>
           </div>
 
-          <div className="flex w-full flex-col gap-4 sm:flex-row sm:gap-6 text-2xl">
-          <Button
-            label={t('START_EVAL_BUTTON', { ns: 'evaluation' })}
-            className="mx-auto w-full sm:w-1/2 bg-[rgba(240,99,71,1)] border-2 border-black"
-            data-test="start-eval-button"
-            onClick={() => {
-              push('/evaluation/general')
-            }}
-          />
+          <div className="flex w-full flex-col justify-center sm:flex-row sm:gap-6 text-2xl">
+            {/* Language selection */}
+            <div className="mb-5 flex justify-center gap-4">
+              <Button
+                label="Thai"
+                className="mx-auto w-full sm:w-1/2 bg-[rgba(240,99,71,1)] border-2 border-black"
+                onClick={() => push('/evaluation/general')}
+                data-test="lang-th-button"
+              />
+              <Button
+                label="English"
+                className="mx-auto w-full sm:w-1/2 bg-[rgba(240,99,71,1)] border-2 border-black"
+                onClick={() => push('/en/evaluation/general')}
+                data-test="lang-en-button"
+              />
+            </div>
+          </div>
         </div>
-        </div>
-        
 
-        
+
+
       </div>
     </Wrapper>
   )

@@ -1,6 +1,6 @@
 {
-  "LOADING_STATE_TITLE": "Igniting...",
-  "LOADING_STATE_SUBTITLE": "!",
+  "LOADING_STATE_TITLE": "Loading...",
+  "LOADING_STATE_SUBTITLE": "Please wait a moment!",
   "BUTTON_LABEL": {
     "CLOSE": "Close",
     "CANCEL": "Cancel",

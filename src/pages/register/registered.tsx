@@ -24,16 +24,16 @@ const Page: NextPage = () => {
         <IctMahidolOpenHouseWordmark className="mb-20 w-full" />
 
         <div className="p-4 pt-8 bg-[#4B9D4D]/80 backdrop-blur-sm rounded-3xl">
-          <div className="mb-6 space-y-4 text-center font-heading text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          <div className="text-5xl font-bold">
-            {t('REGISTERED.REG_EXISTED_TITLE', { ns: 'register' })}
-          </div>
-          <div className="text-2xl">
-            {t('REGISTERED.REG_EXISTED_SUBTITLE', { ns: 'register' })}
+          <div className="mb-6 space-y-4 text-center  text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            <div className="text-5xl font-bold">
+              {t('REGISTERED.REG_EXISTED_TITLE', { ns: 'register' })}
+            </div>
+            <div className="text-2xl">
+              {t('REGISTERED.REG_EXISTED_SUBTITLE', { ns: 'register' })}
+            </div>
           </div>
         </div>
-        </div>
-        
+
         {liff.isInClient?.() && (
           <div className="mt-10 w-full text-center">
             <Button

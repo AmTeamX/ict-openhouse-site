@@ -4,7 +4,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
 import RegistrantTypes from '~/const/register/registrantType'
 import { useStoreon } from '~/context/storeon'
-import Wrapper from '~/layouts/Wrapper'
+import Wrapper, { BG_VARIANT_TYPES } from '~/layouts/Wrapper'
 import RegistrantTypeButton from '~/routes/Register/components/RegistrantTypeButton'
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'th' }) => ({
@@ -19,10 +19,10 @@ const Page = () => {
   const { dispatch } = useStoreon('form')
 
   return (
-    <Wrapper>
+    <Wrapper variant={BG_VARIANT_TYPES.LANDING}>
       <div className="mx-auto flex min-h-screen max-w-screen-md flex-col items-center justify-center px-8 py-10">
-        <div className="mb-10 text-center font-heading text-6xl font-bold">
-          <div>{t('TYPE_SELECTION.REG_TYPE_SELECTION_TITLE')}</div>
+        <div className="mb-10 text-center  text-6xl font-bold text-black">
+          <div>{t('TYPE_SELECTION.REG_TYPE_SELECTION_TITLE')}?</div>
         </div>
 
         <div className="grid w-full grid-cols-[repeat(3,_minmax(100px,_1fr))] justify-between gap-3 sm:grid-cols-3 sm:gap-6">

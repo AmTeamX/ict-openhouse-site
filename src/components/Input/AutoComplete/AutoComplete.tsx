@@ -17,14 +17,14 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
       <div>
         {label
           ? (
-          <InputLabel
-            htmlFor={name}
-            label={label}
-            className="mb-1 block"
-            required={required}
-            data-test={`input-label-${name}`}
-          />
-            )
+            <InputLabel
+              htmlFor={name}
+              label={label}
+              className="mb-1 block"
+              required={required}
+              data-test={`input-label-${name}`}
+            />
+          )
           : null}
         <div className="relative">
           <BaseInput
@@ -39,10 +39,10 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
           />
           {error
             ? (
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-red-800">
-              <Icon icon="op2022:error" />
-            </div>
-              )
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-red-800">
+                <Icon icon="op2022:error" />
+              </div>
+            )
             : null}
         </div>
       </div>

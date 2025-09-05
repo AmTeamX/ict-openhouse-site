@@ -1,6 +1,6 @@
 {
   "TYPE_SELECTION": {
-    "REG_TYPE_SELECTION_TITLE": "กรุณาเลือกตัวละคร",
+    "REG_TYPE_SELECTION_TITLE": "คุณคือใคร",
     "REG_TYPE_STUDENT": "นักเรียน",
     "REG_TYPE_UNI_STUDENT": "นักศึกษา",
     "REG_TYPE_TEACHER": "อาจารย์",
@@ -22,16 +22,16 @@
     "REG_FIELD_EMAIL": "อีเมล",
     "REG_FIELD_PHONE": "เบอร์โทรศัพท์",
 
-    "REG_FIELD_FIRSTNAME_PLACEHOLDER": "สตีฟ",
-    "REG_FIELD_LASTNAME_PLACEHOLDER": "เอนเดอร์ดรากอน",
-    "REG_FIELD_EMAIL_PLACEHOLDER": "steve@minecraft.com",
+    "REG_FIELD_FIRSTNAME_PLACEHOLDER": "เป็ดน้อย",
+    "REG_FIELD_LASTNAME_PLACEHOLDER": "คอยรัก",
+    "REG_FIELD_EMAIL_PLACEHOLDER": "Duckey@ictmahidol.com",
     "REG_FIELD_PHONE_PLACEHOLDER": "024410909",
 
     "REG_FIELD_PROVINCE": "จังหวัดที่อาศัยอยู่ปัจจุบัน",
     "REG_FIELD_SCHOOL": "โรงเรียน/สถาบัน/มหาวิทยาลัย",
     "REG_FIELD_SCHOOL_LEVEL": "ระดับชั้น",
 
-    "REG_FIELD_SCHOOL_PLACEHOLDER": "โรงเรียนวิลเลจเจอร์วิทยา",
+    "REG_FIELD_SCHOOL_PLACEHOLDER": "โรงเรียนเป็ดน้อย",
 
     "REG_BUTTON_SUBMIT": "ลงทะเบียน",
     "REG_BUTTON_NEXT": "ต่อไป",
@@ -39,7 +39,7 @@
     "REG_BUTTON_ACCEPT": "ยอมรับ",
 
     "REG_SUCCESS_TITLE": "ลงทะเบียนสำเร็จ",
-    "REG_SUCCESS_SUBTITLE": "ไปจุดประกายความฝันกันเลย!",
+    "REG_SUCCESS_SUBTITLE": "ยินดีต้อนรับสู่ ICT MAHIDOL",
 
     "POLICY": {
       "TITLE": "นโยบายความเป็นส่วนตัว",
@@ -47,7 +47,7 @@
     }
   },
   "REGISTERED": {
-    "REG_EXISTED_TITLE": "ลงทะเบียนเรียบร้อยแล้ว",
-    "REG_EXISTED_SUBTITLE": "ไปจุดประกายความฝันกันเลย!"
+    "REG_EXISTED_TITLE": "ลงทะเบียนไปแล้ว",
+    "REG_EXISTED_SUBTITLE": "ไปสนุกกับ ICT MAHIDOL กันเถอะ!"
   }
 }
